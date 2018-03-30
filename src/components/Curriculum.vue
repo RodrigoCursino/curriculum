@@ -1,38 +1,30 @@
 <template>
-  <div>
-    <div class="d-flex align-items-stretch">
-      <div class="p-2 back-blue"><i class="fab fa-github icon"></i></div>
-      <div class="p-2 back-green"></div>
-      <div class="p-2 back-red"></div>
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-md-10 curriculum">
+        <main-nav></main-nav>
+        <router-view></router-view>
+        <p class="text-muted text-center">&copy; todos os direitos reservados</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+
+import MainNav from "./nav/MainNav";
+
 export default {
+  components: {
+    MainNav
+  },
   name: 'Curriculum',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
     }
   }
 }
 </script>
 <style lang="scss" scoped>
-  $red: rgb(255.0,0.0,0.0);
-  $green: rgb(0.0,255.0,0.0);
-  $blue: rgb(0.0,0.0,255.0);
-  .icon {
-    color: white;
-    font-size: 1.8em;
-  }
-  .back-red {
-    background-color: $red;
-  };
-  .back-blue {
-    background-color: $blue;
-  };
-  .back-green {
-    background-color: $green;
-  };
+
 </style>

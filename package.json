@@ -12,8 +12,10 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",
+    "moment": "^2.21.0",
     "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue2-google-maps": "^0.8.11"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

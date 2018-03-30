@@ -1,0 +1,56 @@
+@import "colors";
+
+// colors
+.white {
+  background-color: $white;
+  color: $green;
+}
+
+.grey {
+  background-color: $grey;
+  p {
+    color: $black;
+  }
+}
+
+.orange {
+  background-color: $orange;
+  color: $white;
+}
+
+.black {
+  background-color: $black;
+  color: $white;
+}
+
+.black_opacity {
+  background-color: $black_opacity;
+  color: $black;
+}
+
+.purple {
+  background-color: $purple;
+  color: $white;
+}
+
+.red {
+  background-color: $red;
+  color: $white;
+}
+
+.green {
+  background-color: $green;
+  color: $white;
+}
+.blue {
+  background-color: $blue-light;
+  color: $white;
+}
+.blue_strong {
+  background-color: $blue-strong;
+  color: $white;
+}
+
+.icon {
+  margin-right: 5px;
+}

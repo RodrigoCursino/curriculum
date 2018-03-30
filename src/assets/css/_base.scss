@@ -1,6 +1,90 @@
-$background-color: rgba(248,249,250,0.38);
+@import "variaveis";
+@import "text";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i');
+
+h1 {
+  margin-bottom: 0px;
+}
 
 body {
-  background-color: $background-color;
+  background-color: $body-color;
   height: 100vmin;
+  font-family: 'Open Sans', sans-serif;
+  padding: 30px;
+};
+
+.curriculum {
+    background-color: $white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.body_curriculum {
+  background-color: $white;
+  margin-bottom: 15px;
+  padding: 50px 0px 0px 0px;
+  .grey {
+    padding: 26px;
+    margin-bottom: 15px;
+  }
+}
+
+.vertical_bar {
+  border-left: 2px solid $blue-light;
+  padding-left: 15px;
+}
+
+.body_content {
+  padding: 0px 50px 0px 50px;
+  margin-bottom: 60px;
+}
+
+.body_title {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.profile_name {
+  padding: 25px;
+  background-color: $blue-medium;
+  color: $white;
+  h1 {
+    font-size: 1.8em;
+    margin-left: 25px;
+  }
+}
+
+.profile_career {
+  padding: 30px;
+  background-color: $blue-strong;
+  color: $white;
+  p {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+}
+
+.item {
+  cursor: pointer;
+  height: 121px;
+  font-size: 4em;
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width:480px) {
+  .item {
+    cursor: pointer;
+    height: 121px;
+    font-size: 3em;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    .p-2 {
+      padding: 30px;
+    }
+  }
 }
